@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "PiTT — Pin to the Top for Gmail",
+  "version": "0.1.0",
+  "description": "Keep local shortcuts to pinned Gmail conversations above your inbox.",
+  "permissions": ["storage"],
+  "content_scripts": [{
+    "matches": ["https://mail.google.com/mail/*"],
+    "js": ["core.js", "content.js"],
+    "css": ["styles.css"],
+    "run_at": "document_idle"
+  }]
+}

@@ -1,0 +1,29 @@
+.pitt-panel {
+  box-sizing: border-box;
+  margin: 12px 16px;
+  padding: 16px;
+  border: 1px solid #e4c65c;
+  border-radius: 14px;
+  background: #fff3b0;
+  color: #202124;
+  font: 14px/1.5 Arial, sans-serif;
+}
+.pitt-panel h2 { margin: 0; font-size: 17px; font-weight: 600; }
+.pitt-panel ul { list-style: none; padding: 0; margin: 0; max-height: 280px; overflow: auto; }
+.pitt-panel li { display: flex; align-items: center; gap: 12px; border-top: 1px solid #e9d785; padding: 7px 0; }
+.pitt-panel a { flex: 1; min-width: 0; color: #174ea6; text-decoration: none; overflow-wrap: anywhere; }
+.pitt-panel a:hover { text-decoration: underline; }
+.pitt-sender { display: inline-block; font-weight: 600; margin-right: 16px; }
+.pitt-panel button, .pitt-pin {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; flex-shrink: 0; vertical-align: middle;
+  cursor: pointer; border: 1px solid transparent; border-radius: 6px;
+  background: transparent; color: #c5221f; padding: 4px;
+}
+.pitt-pin { margin: 0 4px; position: relative; z-index: 1; }
+.pitt-panel button svg, .pitt-pin svg { fill: currentColor; transform: rotate(35deg); pointer-events: none; }
+.pitt-panel button[aria-pressed="true"] svg, .pitt-pin[aria-pressed="true"] svg { transform: none; }
+.pitt-panel button:hover, .pitt-pin:hover { background: #fce0d6; border-color: #e9a49c; }
+.pitt-pin[aria-pressed="true"] { background: #fce0d6; }
+.pitt-panel button:disabled, .pitt-pin:disabled { opacity: .6; cursor: wait; }
+.pitt-panel a:focus-visible, .pitt-panel button:focus-visible, .pitt-pin:focus-visible { outline: 2px solid #174ea6; outline-offset: 2px; }
