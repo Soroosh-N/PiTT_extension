@@ -1,4 +1,4 @@
-﻿# PiTT — Pin to the Top for Gmail
+﻿# PiTT — Pin To Top for Gmail
 
 A small Chrome extension that keeps pinned conversation shortcuts above your Gmail inbox. Pins stay local to your browser and do not change Gmail's ordering or labels.
 
