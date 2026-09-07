@@ -25,4 +25,4 @@ Account addresses and pinned conversation details are stored locally in Chrome, 
 
 Run checks with `node --test tests/core.test.cjs` (requires Node.js).
 
-No open-source license has been selected yet.
+Licensed under the [MIT License](LICENSE).
